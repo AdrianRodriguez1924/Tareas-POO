@@ -9,7 +9,7 @@ public class Main {
     }
 }
 
-//Calculadora
+//Calculadora 
 public class Calculadora {
 
     public int ingresos;
