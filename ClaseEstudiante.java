@@ -11,7 +11,7 @@ public class Estudiante {
         this.cursos = new ArrayList<>(); // Inicializamos la lista de cursos
     }
 
-    // Métodos getter y setter (opcionales)
+    
     public String getNombre() {
         return nombre;
     }
@@ -36,12 +36,12 @@ public class Estudiante {
         this.cursos = cursos;
     }
 
-    // Método para agregar un curso
+   
     public void agregarCurso(Curso curso) {
         cursos.add(curso);
     }
 
-    // Método para mostrar la información del estudiante
+    
     public void mostrarInformacion() {
         System.out.println("Estudiante: " + nombre);
         System.out.println("ID: " + idEstudiante);
