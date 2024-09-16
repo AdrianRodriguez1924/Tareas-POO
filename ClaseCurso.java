@@ -3,14 +3,14 @@ public class Curso {
     String codigoCurso;
     String instructor;
 
-    // Constructor
+    
     public Curso(String nombreCurso, String codigoCurso, String instructor) {
         this.nombreCurso = nombreCurso;
         this.codigoCurso = codigoCurso;
         this.instructor = instructor;
     }
 
-    // Métodos getter y setter (opcionales)
+    
     public String getNombreCurso() {
         return nombreCurso;
     }
@@ -35,7 +35,7 @@ public class Curso {
         this.instructor = instructor;
     }
 
-    // Método para mostrar la información del curso
+    
     public void mostrarInfoCurso() {
         System.out.println("Curso: " + nombreCurso);
         System.out.println("Código: " + codigoCurso);
