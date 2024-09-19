@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Categoria {
+
+    public int id;
+    public String nombre;
+    public ArrayList<Producto> ListaProductos = new ArrayList<>();
+    public Random random = new Random();
+
+    public Categoria(String nombre) {
+        this.id = this.random.nextInt(10001);
+        this.nombre = nombre;
+    }
+
+    public void agregarProductoACategoria(Producto producto) {
+        if (producto != null) {
+            this.ListaProductos.add(producto);
+        } else {
+            System.out.println("Producto no válido");
+        }
+    }
+
+    public void imprimirCategoria() {
+        System.out.println("Id: " + id + ", Nombre: " + nombre);
+    }
+
+    public void imprimirCategoriaConProductos() {
+        System.out.println("\nCategoría: " + nombre);
+        System.out.println("Id: " + id);
+
+        if (this.ListaProductos.isEmpty()) {
+            System.out.println("No hay productos en esta categoría");
+        } else {
+            System.out.println("Productos en la categoría:");
+            for (Producto producto : this.ListaProductos) {
+                System.out.println(producto.mostrarProducto());
+            }
+        }
+    }
+}
